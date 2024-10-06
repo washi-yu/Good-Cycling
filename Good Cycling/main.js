@@ -1,4 +1,15 @@
 $(function () {
+  // ハンバーガー操作
+  $(".hamburger").click(function () {
+    $(".hamburger, .slide-menu").toggleClass("active");
+  });
+
+  $(
+    ".consept-hm,.features-hm, .howuse-hum,.area-hum,.voice-hum,.recautions-hum"
+  ).click(function () {
+    $(".hamburger, .slide-menu").toggleClass("active");
+  });
+
   const revers = document.getElementById("revers");
 
   window.addEventListener("scroll", () => {
